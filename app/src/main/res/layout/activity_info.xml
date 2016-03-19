@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.douglas.dicegame.InfoActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="3dp"
+    android:layout_weight="0"
+    android:background="@android:color/holo_red_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informações"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/diceicon"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dice Duel"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consiste em um duelo de dados baseado nos resultados, tendo como vencedor o valor mais alto."
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Dice"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consiste em um simples random de um unico dado, tendo a opção da quantidade de lados no qual o dado tem."
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Craps"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jogo mais complexo que consiste em até 2 etapas."
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etapa 1: Jogador deve tirar o numero 7 ou 11 para ganhar, caso tire 3, 6 ou 12 perde automaticamente e caso tire 4, 5, 6, 8 ou 10 ira para a segunda etapa do jogo."
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etapa 2: Jogador deve rodar o dado ate sair o numero tirado na etapa 1 para ganhar, caso tire 7 perde automaticamente."
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvimento"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvido especificamente para o projeto final do curso Android Study Jams"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvedor: Douglas Oliveira Barbosa"
+            android:layout_marginBottom="30dp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.douglas.dicegame.RandomDice">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Craps"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="10dp"
+        android:text="7 ou 11 : Ganha o jogo"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="10dp"
+        android:text="2, 3 ou 12 : Perde o jogo"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="10dp"
+        android:text="4, 5 ,6 ,8 ou 10 : Nova Estapa do Jogo"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Resultado"
+        android:id="@+id/resul"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/dice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="90sp" />
+
+
+    <Button
+        style="@style/ButtonTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:onClick="rollDice"
+        android:text="ROLL !!!"
+        android:id="@+id/rollIdButton"/>
+
+    <Button
+        style="@style/ButtonTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="reset"
+        android:text="RESETAR JOGO" />
+
+
+</LinearLayout>

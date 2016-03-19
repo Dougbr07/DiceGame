@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.douglas.dicegame.MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:src="@drawable/dicelogo"
+        android:id="@+id/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dice Game"
+        android:textSize="50sp"
+        android:layout_alignBottom="@id/logo"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"/>
+
+
+</RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dice Duel"
+        android:onClick="duelDice"
+        android:layout_weight="1"
+        android:layout_marginTop="35dp"
+        style="@style/ButtonTheme"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Random Dice"
+        android:onClick="randomDice"
+        android:layout_weight="1"
+        style="@style/ButtonTheme"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Craps"
+        android:onClick="craps"
+        android:layout_weight="1"
+        style="@style/ButtonTheme"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info."
+        android:onClick="infoApp"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        style="@style/ButtonTheme" />
+
+
+
+</LinearLayout>

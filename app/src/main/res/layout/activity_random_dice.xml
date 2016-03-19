@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.douglas.dicegame.RandomDice">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.3"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/dice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="90sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Quantidade de Lados:"
+        android:textSize="20sp" />
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="6" />
+
+            <RadioButton
+                android:id="@+id/check8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/check12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="12" />
+
+            <RadioButton
+                android:id="@+id/check20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="20" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <Button
+        style="@style/ButtonTheme2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:onClick="rollDice"
+        android:text="ROLL !!!" />
+
+
+</LinearLayout>
